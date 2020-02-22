@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EVERYONE+</title>
+	<meta charset="UTF-8">
+
+<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!-- Estilos propios -->
+	<link rel="stylesheet" type="text/css" href="../css/estilos.css">
+
+</head>
+<body>
+
+
+<div class="container">
+	<div class="row header">
+		<div class="logobox col-sm-10 offset-sm-1">
+			<div class="col-sm-3 float-left">
+				<img src="../img/logo_sonrisa.jpg">
+			</div>
+			<div class="col-sm-2 float-right">
+				<img src="../img/logo_schindler.png">
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="claim">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-7 offset-sm-1 texto_claim">
+				<h2>Entra en el sorteo de 2 iPad <br> ¡Suerte!</h2>
+			</div>
+			<div class="col-sm-3 foto_claim">
+				<img src="../img/ipad_pro.jpg">
+			</div>
+		</div>
+	</div>	
+</div>
+
+
+<div class="container">
+	<div class="row formulario">
+		<div class="col-sm-10 offset-sm-1 ">
+			<p>
+				<b>Para participar solo tienes que responder a estas sencillas preguntas y pulsar el botón enviar.</b>
+				El nombre de los dos ganadores se comunicará en la cena patrocinada por Schindler el día 27 de mayo en la Finca Las Calabacicas.
+
+			</p>
+			<h4>Participa</h4>
+		</div>
+
+<!-- FORMULARIO -->
+		<div class="col-sm-10 offset-sm-1 ">
+			<form>
+				<div class="form-group">
+					<label for="form-comunidades">
+						¿A cuántas Comunidades de Vecinos das servicio?
+					</label>
+				    <select class="form-control" id="form-comunidades">
+				      <option>1</option>
+				      <option>2</option>
+				      <option>3</option>
+				      <option>4</option>
+				      <option>5</option>
+				    </select>
+				</div>
+
+				<div class="form-group" >
+					<b>Si ya trabajas con Schindler en el sector residencial:</b>
+				</div>
+
+				<div class="form-group">
+					<label>
+						¿Estás dado de alta en la Comunidad Schindler?
+					</label>
+					<div>
+						<div class="form-check form-check-inline">
+						  <input class="form-check-input" type="radio" name="form-alta-radio" id="form-alta-radio-si" value="si">
+						  <label class="form-check-label" for="form-alta-radio-si">Si</label>
+						</div>
+						<div class="form-check form-check-inline">
+						  <input class="form-check-input" type="radio" name="form-alta-radio" id="form-alta-radio-no" value="no">
+						  <label class="form-check-label" for="form-alta-radio-no">No</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label>
+						¿Te gustaría?
+					</label>
+					<div>
+						<div class="form-check form-check-inline">
+						  <input class="form-check-input" type="radio" name="form-gustaria-radio" id="form-gustaria-radio-si" value="si">
+						  <label class="form-check-label" for="form-gustaria-radio-si">Si</label>
+						</div>
+						<div class="form-check form-check-inline">
+						  <input class="form-check-input" type="radio" name="form-gustaria-radio" id="form-gustaria-radio-no" value="no">
+						  <label class="form-check-label" for="form-gustaria-radio-no">No</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label>
+						<br>
+						¿Quieres recibir publicidad sobre los descuentos y ventajas de nuestra Comunidad?
+					</label>
+					<div>
+						<div class="form-check form-check-inline">
+						  <input class="form-check-input" type="radio" name="form-publicidad-radio" id="form-publicidad-radio-si" value="si">
+						  <label class="form-check-label" for="form-publicidad-radio-si">Si</label>
+						</div>
+						<div class="form-check form-check-inline">
+						  <input class="form-check-input" type="radio" name="form-publicidad-radio" id="form-publicidad-radio-no" value="no">
+						  <label class="form-check-label" for="form-publicidad-radio-no">No</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group text-center texto_bases">				
+					<div class="form-check form-check-inline">
+					  <input class="form-check-input" type="radio" name="form-acepto-radio" id="form-acepto-radio" value="no">
+					  <label class="form-check-label" for="form-acepto-radio">
+					  He leído y acepto las bases legales
+					  </label>
+					</div>
+
+					<div class="form-group">
+						<button id="enviar_formulario" class="btn btn-primary boton_rojo">ENVIAR</button>
+					</div>
+
+				</div>
+
+			</form>
+		</div>
+
+	</div>
+</div>
+
+
+<div class="container">
+	<div class="row footer">
+		<div class="col-sm-12 text-center copyright">
+			© Schindler 2014
+		</div>
+	</div>
+</div>
+
+
+
+<!-- jQuery, Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>

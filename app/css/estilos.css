@@ -1,18 +1,47 @@
 body {
-  background: transparent;
+  font-family: 'Open Sans', sans-serif;
 }
 
 div {
   border: 0px solid #00f;
 }
 
+.nav-pills {
+  margin: 1em auto;
+}
+
+.nav-pills .nav-link {
+  padding: 1em 2em;
+  margin: 0 0.2em;
+  border-radius: 0;
+  border: 2px solid #dc0000;
+  background: #dc0000;
+  color: #fff;
+}
+
+.nav-pills .nav-link:hover {
+  background: #fff;
+  color: #dc0000;
+  border: 2px solid #dc0000;
+}
+
 .header {
   height: 30em;
+  background-image: url("../img/header_ascensor.jpg");
+  background-repeat: no;
+  background-position: center;
+  background-size: 115% 100%;
 }
 
 .logobox {
   height: 7em;
-  backgroung: #fff;
+  background-color: #fff;
+  z-index: 999;
+}
+
+.logobox img {
+  margin-top: 0.3em;
+  height: 5em;
 }
 
 .claim {
@@ -29,6 +58,11 @@ div {
 .claim .texto_claim h2 {
   font-weight: bold;
   font-size: 37px;
+}
+
+.claim .foto_claim img {
+  width: 210px;
+  margin-top: -15px;
 }
 
 .formulario {
@@ -53,13 +87,20 @@ div {
   font-size: 12px;
 }
 
-.formulario .texto_bases button {
+.boton_rojo {
   margin-top: 0.3em;
   padding: 0.1em 5em;
   font-size: 22px;
   border-radius: 0;
+  border: 2px solid #dc0000;
   background: #dc0000;
   color: #fff;
+}
+
+.boton_rojo:hover {
+  background: #fff;
+  color: #dc0000;
+  border: 2px solid #dc0000;
 }
 
 .footer {
@@ -68,4 +109,13 @@ div {
 
 .footer .copyright {
   font-size: 12px;
+}
+
+.centered-x position absolute {
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.bottom position fixed {
+  bottom: 0;
 }

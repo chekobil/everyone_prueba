@@ -2,15 +2,37 @@ $rojo = #dc0000
 $font-family = 'Open Sans',sans-serif
 
 body
-  background transparent
+  font-family $font-family
 div
 	border 0px solid blue
 
+.nav-pills
+	margin 1em auto
+.nav-pills .nav-link
+	padding 1em 2em
+	margin 0 0.2em
+	border-radius 0
+	border 2px solid $rojo
+	background $rojo
+	color white
+	&:hover
+		background white
+		color $rojo
+		border 2px solid $rojo
+
 .header
 	height 30em
+	background-image url(app/img/header_ascensor.jpg)
+	background-repeat no
+	background-position center
+	background-size 115% 100%
 .logobox
 	height 7em
-	backgroung white
+	background-color white
+	z-index 999
+	img
+		margin-top 0.3em
+		height 5em
 .claim
 	height 12em
 	background $rojo
@@ -21,6 +43,10 @@ div
 		h2
 			font-weight bold
 			font-size 37px
+	.foto_claim
+		img
+			width 210px
+			margin-top -15px
 .formulario
 	padding 1em 2em 2em 4em
 	div
@@ -33,14 +59,30 @@ div
 		margin-top 3em
 		label
 			font-size 12px
-		button
-			margin-top 0.3em
-			padding 0.1em 5em
-			font-size 22px
-			border-radius 0
-			background $rojo
-			color white
+.boton_rojo
+	margin-top 0.3em
+	padding 0.1em 5em
+	font-size 22px
+	border-radius 0
+	border 2px solid $rojo
+	background $rojo
+	color white
+	&:hover
+		background white
+		color $rojo
+		border 2px solid $rojo
+
 .footer
 	padding-bottom 2em
 	.copyright
 		font-size 12px
+
+.centered-x
+	position absolute
+    left 50%
+    transform translate(-50%, 0)
+
+.bottom
+	position fixed
+    bottom 0
+
