@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {
-    "bootstrap": "^4.4.1",
-    "jquery": "^3.4.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-concat-css": "^3.1.0",

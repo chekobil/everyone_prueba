@@ -5,7 +5,7 @@ var concatcss = require('gulp-concat-css');
 var livereload = require('gulp-livereload');
 
 gulp.task('stylus', function (done) {
-    return gulp.src('./app/stylus/*.styl')
+    return gulp.src(['./app/stylus/estilos.styl'])
       .pipe(stylus())
       .pipe(concatcss("./app/css/estilos.css"))
       .pipe(gulp.dest('./'))

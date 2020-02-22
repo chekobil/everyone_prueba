@@ -1,6 +1,71 @@
-h2 {
-  font-size: 22px;
-}
 body {
   background: transparent;
+}
+
+div {
+  border: 0px solid #00f;
+}
+
+.header {
+  height: 30em;
+}
+
+.logobox {
+  height: 7em;
+  backgroung: #fff;
+}
+
+.claim {
+  height: 12em;
+  background: #dc0000;
+}
+
+.claim .texto_claim {
+  padding-top: 2em;
+  padding-left: 3.8em;
+  color: #fff;
+}
+
+.claim .texto_claim h2 {
+  font-weight: bold;
+  font-size: 37px;
+}
+
+.formulario {
+  padding: 1em 2em 2em 4em;
+}
+
+.formulario div {
+  font-size: 18px;
+  line-height: 1.37em;
+}
+
+.formulario h4 {
+  color: #dc0000;
+  font-weight: bold;
+}
+
+.formulario .texto_bases {
+  margin-top: 3em;
+}
+
+.formulario .texto_bases label {
+  font-size: 12px;
+}
+
+.formulario .texto_bases button {
+  margin-top: 0.3em;
+  padding: 0.1em 5em;
+  font-size: 22px;
+  border-radius: 0;
+  background: #dc0000;
+  color: #fff;
+}
+
+.footer {
+  padding-bottom: 2em;
+}
+
+.footer .copyright {
+  font-size: 12px;
 }
