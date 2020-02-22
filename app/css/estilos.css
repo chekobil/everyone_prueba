@@ -6,6 +6,10 @@ div {
   border: 0px solid #00f;
 }
 
+img {
+  border: 0px dotted #008000;
+}
+
 .nav-pills {
   margin: 1em auto;
 }
@@ -66,7 +70,7 @@ div {
 }
 
 .formulario {
-  padding: 1em 2em 2em 4em;
+  padding: 1em 2em 2em 2em;
 }
 
 .formulario div {
@@ -118,4 +122,67 @@ div {
 
 .bottom position fixed {
   bottom: 0;
+}
+
+@media (max-width: 850px) {
+  .header {
+    height: 25em;
+  }
+
+  .claim .texto_claim {
+    padding-top: 2em;
+    padding-left: 0em;
+  }
+
+  .claim .texto_claim h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    height: 20em;
+  }
+
+  .logobox {
+    height: 5em;
+  }
+
+  .logobox img {
+    margin-top: 0.2em;
+    height: 3em;
+  }
+
+  .claim {
+    height: 9em;
+  }
+
+  .claim .texto_claim {
+    padding-top: 1em;
+    padding-left: 0em;
+  }
+
+  .claim .texto_claim h2 {
+    font-size: 25px;
+  }
+
+  .claim .foto_claim img {
+    width: 160px;
+    margin-top: -15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: 15em;
+  }
+
+  .logobox {
+    height: 4em;
+  }
+
+  .logobox img {
+    margin-top: 0.2em;
+    height: 3em;
+  }
 }
