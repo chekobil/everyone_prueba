@@ -69,6 +69,10 @@ img {
   margin-top: -15px;
 }
 
+.registro-header {
+  margin-top: 3em;
+}
+
 .formulario {
   padding: 1em 2em 2em 2em;
 }
@@ -91,6 +95,14 @@ img {
   font-size: 12px;
 }
 
+.formulario .texto_bases_dos {
+  margin-top: 0.5em;
+}
+
+.formulario .texto_bases_dos label {
+  font-size: 12px;
+}
+
 .boton_rojo {
   margin-top: 0.3em;
   padding: 0.1em 5em;
@@ -104,6 +116,24 @@ img {
 .boton_rojo:hover {
   background: #fff;
   color: #dc0000;
+  border: 2px solid #dc0000;
+}
+
+.boton_rojo_mini {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding: 0.1em 1em;
+  font-size: 12px;
+  border-radius: 0;
+  border: 2px solid #dc0000;
+  background: #fff;
+  color: #dc0000;
+}
+
+.boton_rojo_mini:hover {
+  background: #dc0000;
+  color: #fff;
   border: 2px solid #dc0000;
 }
 
@@ -122,6 +152,16 @@ img {
 
 .bottom position fixed {
   bottom: 0;
+}
+
+#form-alert-success,
+#form-alert-error,
+#form-alert-info {
+  display: none;
+}
+
+.input-error {
+  border: 3px solid #dc0000;
 }
 
 @media (max-width: 850px) {
@@ -170,6 +210,12 @@ img {
     width: 160px;
     margin-top: -15px;
   }
+
+  .nav-pills .nav-link {
+    width: 48%;
+    margin-bottom: 0.3em;
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -184,5 +230,11 @@ img {
   .logobox img {
     margin-top: 0.2em;
     height: 3em;
+  }
+
+  .nav-pills .nav-link {
+    width: 100%;
+    margin-bottom: 0.3em;
+    font-size: 22px;
   }
 }

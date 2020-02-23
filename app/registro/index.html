@@ -12,27 +12,15 @@
 </head>
 <body>
 
+
 <div>
 	<a class="boton_rojo_mini" href="../">
 		<i class="fas fa-home"></i> home
 	</a>
 </div>
 
-<div class="container">
-	<div class="row header">
-		<div class="logobox col-sm-12 col-md-10 offset-md-1">
-			<div class="col-4 col-md-3 float-left">
-				<img src="../img/logo_sonrisa.jpg">
-			</div>
-			<div class="col-3 col-sm-3 col-md-2 float-right">
-				<img src="../img/logo_schindler.png">
-			</div>
-		</div>
-	</div>
-</div>
 
-
-<div class="claim">
+<div class="claim registro-header">
 	<div class="container">
 		<div class="row">
 			<div class="col-8 col-md-7 offset-md-1 texto_claim">
@@ -54,12 +42,30 @@
 				El nombre de los dos ganadores se comunicará en la cena patrocinada por Schindler el día 27 de mayo en la Finca Las Calabacicas.
 
 			</p>
-			<h4>Participa</h4>
 		</div>
 
 <!-- FORMULARIO -->
 		<div class="col-sm-10 offset-sm-1 ">
-			<form id="form-registro-inactivo">
+			<form id="form-registro">
+
+				<h4>Datos personales</h4>
+
+				<div class="form-group">
+					<label for="form-nombre">Nombre</label>
+				    <input type="text" class="form-control" id="form-nombre" placeholder="Nombre">
+				</div>
+
+				<div class="form-group">
+					<label for="form-email">Email</label>
+				    <input type="text" class="form-control" id="form-email" placeholder="Email">
+				</div>
+
+				<div class="form-group">
+				    <input type="text" class="form-control" id="form-fecha" placeholder="fecha registro">
+				</div>
+
+				<h4>Responde a estas preguntas</h4>
+
 				<div class="form-group">
 					<label for="form-comunidades">
 						¿A cuántas Comunidades de Vecinos das servicio?
@@ -77,7 +83,7 @@
 					<b>Si ya trabajas con Schindler en el sector residencial:</b>
 				</div>
 
-				<div class="form-group">
+				<div class="form-group form-preguntas">
 					<label>
 						¿Estás dado de alta en la Comunidad Schindler?
 					</label>
@@ -91,9 +97,7 @@
 						  <label class="form-check-label" for="form-alta-radio-no">No</label>
 						</div>
 					</div>
-				</div>
-
-				<div class="form-group">
+					<br>
 					<label>
 						¿Te gustaría?
 					</label>
@@ -107,11 +111,8 @@
 						  <label class="form-check-label" for="form-gustaria-radio-no">No</label>
 						</div>
 					</div>
-				</div>
-
-				<div class="form-group">
+					<br>
 					<label>
-						<br>
 						¿Quieres recibir publicidad sobre los descuentos y ventajas de nuestra Comunidad?
 					</label>
 					<div>
@@ -126,28 +127,33 @@
 					</div>
 				</div>
 
-				<div class="form-group text-center texto_bases">				
 
-					<div class="row">
-						<div class="col-sm-12 text-center">
-							<div class="alert alert-info" id="form-alert-info" role="alert">
-								error
-							</div>
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<div class="alert alert-success" id="form-alert-success" role="alert">
+							exito
+						</div>
+						<div class="alert alert-danger" id="form-alert-error" role="alert">
+							error
 						</div>
 					</div>
+				</div>
 
+				<div class="form-group text-center texto_bases_dos">				
 					<div class="form-check form-check-inline">
-					  <input class="form-check-input" type="radio" name="form-acepto-radio" id="form-acepto-radio" value="no">
+					  <input class="form-check-input" type="radio" name="form-acepto-radio" id="form-acepto-radio" value="si">
 					  <label class="form-check-label" for="form-acepto-radio">
 					  He leído y acepto las bases legales
 					  </label>
 					</div>
 
-					<div class="form-group">
-						<button id="enviar_formulario" class="btn btn-primary boton_rojo">ENVIAR</button>
-					</div>
-
 				</div>
+
+
+				<div class="form-group text-center">
+					<button type="submit" id="enviar_formulario" class="btn btn-primary boton_rojo">ENVIAR</button>
+				</div>
+
 
 			</form>
 		</div>
@@ -155,14 +161,6 @@
 	</div>
 </div>
 
-
-<div class="container">
-	<div class="row footer">
-		<div class="col-sm-12 text-center copyright">
-			© Schindler 2014
-		</div>
-	</div>
-</div>
 
 
 
@@ -172,8 +170,9 @@
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<!-- proceso formulario -->
-<script type="text/javascript" src="../js/form-inactivo.js"></script>
+<!-- my jQuery -->
+<script type="text/javascript" src="../js/app.js" ></script>
+
 
 </body>
 </html>
