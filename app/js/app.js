@@ -39,7 +39,6 @@ $(document).ready(function() {
     // valida los valores
     // NOMBRE
     if (data.nombre.length < 1) {
-    	console.log('nombre no sirve')
       	result.error = "Por favor, introduce tu nombre para continuar";
       	$('#form-nombre').addClass('input-error')
     }else{
