@@ -119,6 +119,31 @@ img {
   border: 2px solid #dc0000;
 }
 
+.concurso {
+  margin-top: 2em;
+  padding: 0;
+}
+
+.concurso div {
+  font-size: 18px;
+  line-height: 1.37em;
+}
+
+.concurso h4 {
+  color: #dc0000;
+  font-weight: bold;
+}
+
+.concurso p {
+  line-height: 1em;
+}
+
+#alert-warning,
+#alert-ganador {
+  padding: 1em 0;
+  font-size: 20px;
+}
+
 .boton_rojo_mini {
   position: fixed;
   right: 0;
@@ -145,14 +170,12 @@ img {
   font-size: 12px;
 }
 
-.centered-x {
-  position: absolute;
+.centered-x position absolute {
   left: 50%;
   transform: translate(-50%, 0);
 }
 
-.bottom{
-  position: fixed; 
+.bottom position fixed {
   bottom: 0;
 }
 

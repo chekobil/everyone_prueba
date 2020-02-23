@@ -1,8 +1,10 @@
 $(document).ready(function() {
 
 	// fecha ahora mismo
-	var fecha_now = new Date();
-    $('#form-fecha').val(fecha_now.getTime());
+	//var fecha_now = new Date();
+  // UNIX time en segundos
+  var fecha_now = Math.round((new Date()).getTime() / 1000);
+  $('#form-fecha').val(fecha_now);
 
 
   $('#form-registro').submit(function(e) {
@@ -28,13 +30,13 @@ $(document).ready(function() {
     preguntas = []
     if(typeof data.alta !== 'undefined'){
     	preguntas.push(data.alta)
-	}
+	   }
     if(typeof data.gustaria !== 'undefined'){
     	preguntas.push(data.gustaria)
-	}
+	   }
     if(typeof data.publicidad !== 'undefined'){
     	preguntas.push(data.publicidad)
-	}
+	   }
 
     // valida los valores
     // NOMBRE
@@ -76,22 +78,23 @@ $(document).ready(function() {
     }
 
     // ACEPTO BASES
-	if(typeof data.acepto === 'undefined'){
-    	if(result.error == ""){
-      		result.error = "Por favor, debes aceptar las bases legales";
-    	}
-    	$('.texto_bases_dos').addClass('input-error')
-	}else{
-		$('.texto_bases_dos').removeClass('input-error')
-	}
+  	if(typeof data.acepto === 'undefined'){
+      	if(result.error == ""){
+        		result.error = "Por favor, debes aceptar las bases legales";
+      	}
+      	$('.texto_bases_dos').addClass('input-error')
+  	}else{
+  		$('.texto_bases_dos').removeClass('input-error')
+  	}
 
 	// si alguna validacion tira error, es un error
 	// si no, procesas el formulario y esperas respuesta
     if (result.error != "") {
-		$('#form-alert-error').text(result.error).fadeIn();
-		$('#form-alert-success').hide()
-	}else{
-		$('#form-alert-error').hide()
+		  $('#form-alert-error').text(result.error).fadeIn();
+		  $('#form-alert-success').hide()
+    }else{
+      $('#form-alert-success').hide()
+		  $('#form-alert-error').hide()
 		// procesa el envío
         $.ajax({
             type: "POST",
@@ -104,6 +107,7 @@ $(document).ready(function() {
                 if (typeof jsondata.error !== 'undefined'){
                   msg = 'Se ha producido un error ('+jsondata.error+')';
                   $('#form-alert-error').text(msg).fadeIn();
+                  $('#form-alert-success').fadeOut()
                 }else{
                   $('#form-alert-success').text(jsondata.success).fadeIn();
                 }
@@ -117,8 +121,8 @@ $(document).ready(function() {
               msg = 'Se ha producido un error (ajax_error: '+ajaxerror+')'
               $('#form-alert-error').text(msg).fadeIn();             
            }
-       });
-	}
+        });
+	   }
 
   })
 });
