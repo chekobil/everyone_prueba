@@ -145,12 +145,14 @@ img {
   font-size: 12px;
 }
 
-.centered-x position absolute {
+.centered-x {
+  position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
 }
 
-.bottom position fixed {
+.bottom{
+  position: fixed; 
   bottom: 0;
 }
 
