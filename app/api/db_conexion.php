@@ -69,8 +69,8 @@ if (!isset($_POST['nombre'])){
 					$sql = "INSERT INTO $table ($columns) VALUES ($values)";
 					if ($conn->query($sql) === TRUE) {
 						$inserted_id = $conn->insert_id;
-						$conn->close();
 					    $msg .= " - ".$conn->affected_rows." cuestionario guardado con ID ".$inserted_id;
+					    $conn->close();
 					    #################
 					    echo json_encode(array('success' => $msg));
 					    #################
