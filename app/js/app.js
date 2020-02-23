@@ -94,18 +94,13 @@ $(document).ready(function() {
 	}else{
 		$('#form-alert-error').hide()
 		// procesa el envío
-	     console.log(data)
         $.ajax({
             type: "POST",
             url: '../api/db_conexion.php',
             //data: data.serialize(), // los datos raw del formulario deben ser serialized
             data: data,
             success: function(res){
-                console.log(res)
                 var jsondata = JSON.parse(res);
- 
-                console.log(jsondata)
-
                 // recibe respuesta
                 if (typeof jsondata.error !== 'undefined'){
                   msg = 'Se ha producido un error ('+jsondata.error+')';
@@ -115,7 +110,6 @@ $(document).ready(function() {
                 }
            },
            error: function(res) {
-              //console.log(res)
               if(res.statusText){
                 ajaxerror = res.statusText
               }else{
@@ -125,14 +119,7 @@ $(document).ready(function() {
               $('#form-alert-error').text(msg).fadeIn();             
            }
        });
-
-
-
 	}
-
-
-
-    //console.log('envio formulario, yeah!! '+data.nombre)
 
   })
 });
