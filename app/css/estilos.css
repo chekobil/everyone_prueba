@@ -144,8 +144,7 @@ img {
   font-size: 20px;
 }
 
-.boton_rojo_mini,
-.boton_rojo_mini_left {
+.boton_rojo_mini {
   position: fixed;
   right: 0;
   bottom: 0;
@@ -157,19 +156,16 @@ img {
   color: #dc0000;
 }
 
-.boton_rojo_mini:hover,
-.boton_rojo_mini_left:hover {
+.boton_rojo_mini:hover {
   background: #dc0000;
   color: #fff;
   border: 2px solid #dc0000;
 }
 
-.boton_rojo_mini_left {
-  bottom: 27px;
-}
-
-#delete_ganador {
+.boton_rojo_2 {
   display: none;
+  left: 0;
+  right: auto;
 }
 
 .footer {
