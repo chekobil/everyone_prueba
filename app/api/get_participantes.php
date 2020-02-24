@@ -1,4 +1,6 @@
 <?php
+//permitir conexiones solo de ciertos sitios
+require_once('./origin_allowed.php');
 
 	require_once('./lib.php');
 	// datos de conexion a la BBDD, son propios de cada equipo

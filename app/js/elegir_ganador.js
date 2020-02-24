@@ -4,6 +4,7 @@ $(document).ready(function() {
   $('#alert-resuelto').hide()
   $("#resolver_sorteo").click(function() {
 
+// ELEGIR GANADOR
     $.ajax({
         type: "POST",
         url: '../api/elegir_ganador.php',

@@ -1,4 +1,6 @@
 <?php
+//permitir conexiones solo de ciertos sitios
+require_once('./origin_allowed.php');
 /*
 #### ERRORES
 error_0, no existen datos POST (esto sirve de segunda verificacion del formulario)

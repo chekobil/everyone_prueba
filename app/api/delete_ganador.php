@@ -11,29 +11,15 @@ require_once('./origin_allowed.php');
 		exit;
 	}
 
-
-if($_POST['token'] == '12345'){
-	// lista a todos los participantes y dame sus IDs
 	$table = 'ev_registro';
 	$field = 'id';
 	$field2 = 'es_ganador';
-	$sql = "SELECT $field FROM $table";
-	$list = exec_sql($conn, $sql);
-
-	// elige 1 ID al azar
-	$res = array_rand($list, 1);
-	$this_id = $list[$res][$field];
-	// cambia el valor de es_ganador
-
+	// cambia el valor de es_ganador a 0
 	// UPDATE `ev_registro` SET `es_ganador` = '0' WHERE `ev_registro`.`id` = 2; 
-	$sql = "UPDATE $table SET $field2 = 1 WHERE $field LIKE '$this_id'";
+	$sql = "UPDATE $table SET $field2 = 0 WHERE $field2 = 1";
 	$update = $conn->query($sql);
 	if( $conn->affected_rows == 0 ){
 		echo json_encode(false);
 	}else{
-		//echo json_encode($this_id);
-		echo json_encode($this_id);	
+		echo json_encode(true);	
 	}
-}else{
-	echo json_encode(false);	
-}
