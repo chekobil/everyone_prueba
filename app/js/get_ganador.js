@@ -40,6 +40,7 @@ $(document).ready(function() {
 
 // DELETE_GANADOR
   $('#delete_ganador').click(function(e) {
+      e.preventDefault();
       $.ajax({
           type: "POST",
           url: '../api/delete_ganador.php',
@@ -52,6 +53,10 @@ $(document).ready(function() {
               if (jsondata == false){
 
               }else{
+                msg = jsondata.msg+" (Recarga la página para volver a resolver el concurso)"
+                $('#alert-warning').text(msg).fadeIn(900);
+                $('#alert-ganador').fadeOut(600);
+                $('#delete_ganador').fadeOut(600).delay(2000);
                 location.reload();
               }
             }

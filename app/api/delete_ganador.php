@@ -21,5 +21,5 @@ require_once('./origin_allowed.php');
 	if( $conn->affected_rows == 0 ){
 		echo json_encode(false);
 	}else{
-		echo json_encode(true);	
+		echo json_encode(array('msg'=>'ganador eliminado'));	
 	}

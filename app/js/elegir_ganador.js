@@ -22,7 +22,7 @@ $(document).ready(function() {
               $('#alert-resuelto').text(msg).fadeIn(900);
               $('#alert-resolver').hide()
               $("#resolver_sorteo").hide()
-              $('#alert-warning').hide()
+              $('#alert-warning').hide().delay(2000)
               location.reload();     
             }
        },
